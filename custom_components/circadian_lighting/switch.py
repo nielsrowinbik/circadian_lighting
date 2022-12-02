@@ -275,8 +275,8 @@ class CircadianSwitch(SwitchEntity, RestoreEntity):
     async def async_turn_off(self, **kwargs):
         """Turn off circadian lighting."""
         self._state = False
-        self._hs_color = None
-        self._brightness = None
+        # self._hs_color = None
+        # self._brightness = None
 
     def _is_sleep(self):
         return (
